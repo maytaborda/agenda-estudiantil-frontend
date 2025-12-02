@@ -1,0 +1,208 @@
+.examenes-container{
+    min-height: calc(100vh - 70px);
+    background: #f5f3ff;
+    padding: 30px 20px;
+}
+
+.examenes-header{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.examenes-header h1{
+    color: #7c3aed;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.examenes-header p{
+    color: #6b7280;
+    font-size: 16px;
+    margin: 0;
+}
+
+.btn-add{
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(124,58,237,0.3);
+}
+
+.btn-add:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(124,58,237,0.4);
+}
+
+.form-card{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-card h2{
+    color: #1f2937;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.1);
+}
+
+.form-group textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(124,58,237,0.3);
+}
+
+.btn-submit:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.examenes-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-header h2{
+    color: #1f2937;
+    font-size: 24px;
+    margin: 0;
+}
+
+.examenes-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap:20px
+}
+
+.empty-state{
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.loading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-70px);
+    background: #f5f3ff;
+}
+
+@media (max-width: 768px){
+    .examenes-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px
+    }
+
+    .btn-add{
+        width: 100%;
+    }
+
+    .examenes-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 14px;
+  background: #6B7280;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #4B5563;
+  transform: translateY(-2px);
+}

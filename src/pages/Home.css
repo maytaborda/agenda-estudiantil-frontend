@@ -1,0 +1,149 @@
+.home-container {
+    min-height: calc(100vh-70px);
+    background: #F5F3FF;
+    padding: 30px 20px;
+}
+
+.home-header{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.home-header h1 {
+    color: #7c3aed;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.home-header p{
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.home-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+}
+
+.recordatorios-section, .resumen-section{
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2{
+    color: #1f2937;
+    font-size: 24px;
+    margin: 0;
+}
+
+.badge{
+    background: linear-gradient(135deg,#667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.events-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+}
+
+.empty-state{
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-icon{
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.empty-text{
+    font-size: 20px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.empty-hint{
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.resumen-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.resumen-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.resumen-card:hover{
+    transform: translateY(-4px);
+}
+
+.resumen-card.examenes{
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.resumen-card.trabajos{
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.resumen-card.total{
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+}
+
+.resumen-icon{
+    font-size: 40px;
+}
+
+.resumen-info h3{
+    font-size: 32px;
+    color: #1f2937;
+    margin: 0;
+}
+
+.resumen-info p{
+    color: #6b7280;
+    margin: 0;
+    font-size: 14px;
+}
+
+.loading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    background: #f5f3ff;
+}
+
+@media (max-width: 768px){
+    .events-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .resumen-cards{
+        grid-template-columns: 1fr;
+    }
+}

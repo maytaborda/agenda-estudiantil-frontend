@@ -1,0 +1,117 @@
+.event-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #7C3AED;   
+}
+
+.event-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(124,58,237,0.2);
+}
+
+.event-card.urgente{
+    border-left-color: #ef4444;
+    background: #fef2f2;
+}
+
+.event-card.hoy{
+    border-left-color: #f59e0b;
+    background: #fffbeb;
+}
+
+.event-card.vencido{
+    border-left-color: #6b7280;
+    background: #f9fafb;
+    opacity: 0.7;
+}
+
+.event-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.event-tipo{
+    font-size: 14px;
+    font-weight: 600;
+    color: #7C3AED;
+}
+
+.btn-delete{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover{
+    background: rgba(239,68,68,0.1);
+}
+
+.event-materia{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 8px 0;
+}
+
+.event-fecha{
+    color: #6b7280;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.event-dias{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 6px 12px;
+    background: rgba(124,58,237,0.1);
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.event-card.urgente .event-dias{
+    background: rgba(239,68,68,0.1);
+    color: #dc2626;
+}
+
+.event-card.hoy .event-dias{
+    background: rgba(245,158,11,0.1);
+    color: #d97706;
+}
+
+.event-descripcion{
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.event-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-edit:hover {
+  background: rgba(124, 58, 237, 0.1);
+}
